@@ -1,82 +1,30 @@
-# AI Conversations Website
+# AI Conversations Website (Static Version)
 
-A minimalist website that showcases AI conversations as supplementary material for a research paper. The website automatically updates when new conversations are added to the AI_Conversations folder.
+This repository contains a minimalist, shareable website for displaying AI conversations as supplementary material for a research paper.
 
-## Setup
+## How to Use
 
-1. Install Node.js from [nodejs.org](https://nodejs.org/) if you don't have it already.
+1. **Deploy to GitHub Pages**
+   - Push all files in this folder to your GitHub repository (e.g., `yourusername/ai-conversations-website`).
+   - Enable GitHub Pages in your repository settings (set the source to the `main` branch or `/docs` folder as needed).
+   - The site will be available at `https://yourusername.github.io/ai-conversations-website/`.
 
-2. Install dependencies:
-   ```
-   npm install
-   ```
+2. **Add Conversations**
+   - Place your conversation folders and markdown files inside the `AI_Conversations` directory.
+   - The website will automatically display all conversations in the sidebar.
 
-3. Start the server:
-   ```
-   npm start
-   ```
+## Folder Structure
 
-   For development with auto-restart on file changes:
-   ```
-   npm run dev
-   ```
-
-4. Open the website in your browser:
-   ```
-   http://localhost:3000
-   ```
-
-## Adding New Conversations
-
-To add new conversations:
-
-1. Create folders and subfolders in the `AI_Conversations` directory to organize your content.
-2. Add markdown files (.md) with your conversations following this format:
-
-```markdown
-### User Prompt 1
-
-Your user prompt text here...
-
----
-
-### Gemini's Answer 1
-
-AI response text here...
-
----
-
-### User Prompt 2
-
-Your next user prompt text here...
-
----
-
-### Gemini's Answer 2
-
-AI response text here...
-```
-
-The website will automatically detect new files and folders when they are added.
-
-## File Structure
-
-- `AI_Conversations/` - Contains all AI conversation files
-  - `[AI System]/` (e.g., Gemini Chats) - Folders for different AI systems
-    - `[Question X]/` - Folders for different questions or topics
-      - `[Conversation Name].md` - Individual conversation files
+- `index.html` — Main website file
+- `css/` — Stylesheets
+- `js/` — JavaScript (including markdown parser)
+- `AI_Conversations/` — All your AI conversation folders and markdown files
 
 ## Features
-
-- Minimalist and intuitive user interface
+- Minimalist, responsive, and dark-mode friendly UI
 - Automatic detection of new conversation files
-- Hierarchical organization of conversations
-- Markdown rendering with support for code blocks
-- Responsive design for desktop and mobile
-- Dark mode support
+- Markdown rendering with code block support
 
-## Technologies Used
+---
 
-- Node.js + Express for the backend
-- Vanilla JavaScript for the frontend
-- Marked.js for Markdown rendering 
+**Note:** This static version does not require Node.js or a backend. All content is loaded client-side. For dynamic or private content, use the Node.js version. 

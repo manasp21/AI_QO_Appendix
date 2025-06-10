@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to fetch conversations from the AI_Conversations directory
     function fetchConversations() {
-        fetch('/api/conversations')
+        fetch('AI_Conversations/conversations.json')
             .then(response => response.json())
             .then(data => {
                 renderFolderStructure(data);
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to load a conversation file
     function loadConversation(path) {
-        fetch('/api/conversation?path=' + encodeURIComponent(path))
+        fetch(encodeURI(path))
             .then(response => response.text())
             .then(markdown => {
                 displayConversation(path, markdown);
