@@ -1,12 +1,10 @@
 ### User Prompt 1
  
-Consider two states, A and B, with energy gap $\Delta$ between them [Fig.\,ref{}a]. At time t=0, state A is populated and state B is empty. A resonant excitation field drives the transitions between the two states. The strength of the driving field is characterized by the Rabi frequency $\Omega$. We are interested in the population of state B as a function of time for several different cases for the relaxation rates of the two states $\Gamma_A$ and $\Gamma_B$; it is assumed that the states decay into unobserved states:
-\begin{enumerate}[label=Case\,\arabic*: , leftmargin=6em]
-    \item $\Gamma_A=\Gamma_B=0$\,;
-    \item $\Gamma_A=0;\,\,\Gamma_B\ll \Omega$\,;
-    \item $\Gamma_A=0;\,\,\Gamma_B\gg \Omega$\,;
-    \item $\Gamma_A=\Gamma_B=\Gamma\gg \Omega$\,.
-\end{enumerate}
+Consider two states, A and B, with energy gap $\delta$ between them. At time $t=0$, state A is populated and state B is empty. A resonant excitation field drives the transitions between the two states. The strength of the driving field is characterized by the Rabi frequency $\Omega$. We are interested in the population of state B as a function of time for several different cases for the relaxation rates of the two states $\Gamma_A$ and $\Gamma_B$; it is assumed that the states decay into unobserved states:
+- $\Gamma_A=\Gamma_B=0$
+- $\Gamma_A=0;\,\,\Gamma_B\ll \Omega$
+- $\Gamma_A=0;\,\,\Gamma_B\gg \Omega$
+- $\Gamma_A=\Gamma_B=\Gamma\gg \Omega$
 
 ---
 ### Gemini Answer 1
