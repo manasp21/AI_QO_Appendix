@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to fetch conversations from the AI_Conversations directory
     function fetchConversations() {
-        fetch('AI_QO_Appendix/AI_Conversations/conversations.json')
+        fetch('https://manasp21.github.io/AI_QO_Appendix/AI_Conversations/conversations.json')
             .then(response => response.json())
             .then(data => {
                 renderFolderStructure(data);
