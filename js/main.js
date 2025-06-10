@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to fetch conversations from the AI_Conversations directory
     function fetchConversations() {
-        fetch('AI_Conversations/conversations.json')
+        fetch('https://manasp21.github.io/AI_QO_Appendix/AI_Conversations/conversations.json')
             .then(response => response.json())
             .then(data => {
                 renderFolderStructure(data);
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to load a conversation file
     function loadConversation(path) {
-        fetch(encodeURI(path))
+        fetch('https://manasp21.github.io/AI_QO_Appendix/' + encodeURI(path))
             .then(response => response.text())
             .then(markdown => {
                 displayConversation(path, markdown);
