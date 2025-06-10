@@ -1,0 +1,17 @@
+{
+  "name": "ai-conversations-website",
+  "version": "1.0.0",
+  "description": "A website for displaying AI conversations as supplementary material for a research paper",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "marked": "^11.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
