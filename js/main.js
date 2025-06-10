@@ -93,14 +93,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to load a conversation file
     function loadConversation(path) {
-        fetch('https://manasp21.github.io/AI_QO_Appendix/' + encodeURI(path))
-            .then(response => response.text())
+        // Use correct base path for GitHub Pages (serving from repo root)
+        const baseURL = 'https://manasp21.github.io/AI_QO_Appendix/';
+        fetch(baseURL + encodeURI(path))
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.text();
+            })
             .then(markdown => {
                 displayConversation(path, markdown);
             })
             .catch(error => {
                 console.error('Error loading conversation:', error);
-                document.getElementById('conversationContent').innerHTML = '<p class="error">Error loading conversation. Please try again later.</p>';
+                document.getElementById('conversationContent').innerHTML = `<p class="error">Error loading conversation: ${error.message}. Please check the file path.</p>`;
             });
     }
 
