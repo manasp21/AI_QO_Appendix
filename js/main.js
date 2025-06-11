@@ -138,6 +138,16 @@ document.addEventListener('DOMContentLoaded', function() {
             const contentElement = document.createElement('div');
             contentElement.className = 'section-content';
             contentElement.innerHTML = marked.parse(section.content);
+            
+            // Initialize KaTeX
+            renderMathInElement(contentElement, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false}
+                ],
+                throwOnError: false
+            });
+            
             sectionDiv.appendChild(contentElement);
             
             contentDiv.appendChild(sectionDiv);

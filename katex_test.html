@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KaTeX Rendering Test</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .test-case {
+            margin: 25px 0;
+            padding: 20px;
+            border-left: 4px solid #3498db;
+            background-color: #f8f9fa;
+        }
+        .test-case h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .expected {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e8f4f8;
+            border-left: 3px solid #3498db;
+        }
+        .katex { font-size: 1.1em; }
+        .katex-display { margin: 1em 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>KaTeX Rendering Test</h1>
+        
+        <div class="test-case">
+            <h3>Test 1: Inline Math Rendering</h3>
+            <p>This is a paragraph with inline math: $E = mc^2$ should appear correctly.</p>
+            <div class="expected">
+                <strong>Expected:</strong> The equation E=mc² should render inline with text.
+            </div>
+        </div>
+        
+        <div class="test-case">
+            <h3>Test 2: Display Math Rendering</h3>
+            <p>Below should be a displayed integral:</p>
+            $$\int_0^\infty x^2 dx$$
+            <div class="expected">
+                <strong>Expected:</strong> The integral should be centered on its own line with proper sizing.
+            </div>
+        </div>
+        
+        <div class="test-case">
+            <h3>Test 3: Combined Math and Text</h3>
+            <p>This test combines both inline and display math. First, inline: $\frac{\partial}{\partial t}$ and then display:</p>
+            $$\sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}$$
+            <div class="expected">
+                <strong>Expected:</strong> Both inline and display math should render correctly with proper alignment.
+            </div>
+        </div>
+    </div>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false}
+                ],
+                throwOnError: false
+            });
+        });
+    </script>
+</body>
+</html>

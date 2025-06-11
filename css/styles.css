@@ -186,9 +186,9 @@ pre code {
 }
 
 /* Math equation styling */
+.katex { font-size: 1.05em !important; }
 .katex-display {
-    overflow-x: auto;
-    overflow-y: hidden;
+    overflow: auto hidden;
     padding: 10px 0;
 }
 
