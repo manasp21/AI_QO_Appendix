@@ -15,54 +15,54 @@ are the populations after optical pumping is complete?
 This is an optical pumping problem. Let's analyze the transitions and populations step-by-step.
 
 **1. Initial State and Quantization:**
-* The atoms are in the ground state J=1J=1. We will use the z-axis as the quantization axis, so the sublevels are mJ=−1,0,+1m_J = -1, 0, +1.
-* Light propagates along the z-axis (k||ˆz\mathbf{k} || \hat{z}).
-* Light is linearly polarized along the x-axis (ϵ||ˆx\mathbf{\epsilon} || \hat{x}).
-* The excited state is J′=0J'=0, which means it only has one sublevel, m′J=0m'_{J}=0.
-* Initially, the ground state is unpolarized: P(mJ=−1)=P(mJ=0)=P(mJ=+1)=1/3P(m_J=-1) = P(m_J=0) = P(m_J=+1) = 1/3.
+* The atoms are in the ground state $J=1$. We will use the z-axis as the quantization axis, so the sublevels are $m_J = -1, 0, +1$.
+* Light propagates along the z-axis ($\mathbf{k} || \hat{z}$).
+* Light is linearly polarized along the x-axis ($\mathbf{\epsilon} || \hat{x}$).
+* The excited state is $J'=0$, which means it only has one sublevel, $m'_{J}=0$.
+* Initially, the ground state is unpolarized: $P(m_J=-1) = P(m_J=0) = P(m_J=+1) = 1/3$.
 
 **2. Light Polarization and Selection Rules for Excitation:**
-Linear polarization along x can be decomposed into a superposition of right-circular (σ+\sigma^+) and left-circular (σ−\sigma^-) polarization with respect to the z-axis:
+Linear polarization along x can be decomposed into a superposition of right-circular ($\sigma^+$) and left-circular ($\sigma^-$) polarization with respect to the z-axis:
 $$\hat{e}_x = \frac{1}{\sqrt{2}}(\hat{e}_+ - \hat{e}_-)$$
-where $\hat{e}_+ = -\frac{1}{\sqrt{2}}(\hat{e}_x + i\hat{e}_y)correspondsto corresponds to \Delta m_J = +1transitions,and transitions, and \hat{e}_- = \frac{1}{\sqrt{2}}(\hat{e}_x - i\hat{e}_y)correspondsto corresponds to \Delta m_J = -1$ transitions.
-(Note: The phase convention for $\hat{e}_\pmcanvary,butthekeyisthatx−polarizationdrivesboth can vary, but the key is that x-polarization drives both \Delta m_J = +1and and \Delta m_J = -1$ transitions with propagation along z.)
+where $\hat{e}_+ = -\frac{1}{\sqrt{2}}(\hat{e}_x + i\hat{e}_y)$ corresponds to $\Delta m_J = +1$ transitions, and $\hat{e}_- = \frac{1}{\sqrt{2}}(\hat{e}_x - i\hat{e}_y)$ corresponds to $\Delta m_J = -1$ transitions.
+(Note: The phase convention for $\hat{e}_\pm$ can vary, but the key is that x-polarization drives both $\Delta m_J = +1$ and $\Delta m_J = -1$ transitions with propagation along z.)
 
-Electric dipole selection rules for J=1→J′=0J=1 \rightarrow J'=0 excitation:
-* ΔJ=J′−J=0−1=−1\Delta J = J' - J = 0 - 1 = -1 (allowed).
+Electric dipole selection rules for $J=1 \rightarrow J'=0$ excitation:
+* $\Delta J = J' - J = 0 - 1 = -1$ (allowed).
 * Parity must change (assumed for E1 transitions).
-* ΔmJ=m′J−mJ=0−mJ\Delta m_J = m'_{J} - m_J = 0 - m_J.
-    * For ΔmJ=+1\Delta m_J = +1: 0−mJ=+1⟹mJ=−10 - m_J = +1 \implies m_J = -1. So, the |J=1,mJ=−1⟩|J=1, m_J=-1\rangle state can be excited to |J′=0,m′J=0⟩|J'=0, m'_{J}=0\rangle by the σ+\sigma^+ component of the light.
-    * For ΔmJ=−1\Delta m_J = -1: 0−mJ=−1⟹mJ=+10 - m_J = -1 \implies m_J = +1. So, the |J=1,mJ=+1⟩|J=1, m_J=+1\rangle state can be excited to |J′=0,m′J=0⟩|J'=0, m'_{J}=0\rangle by the σ−\sigma^- component of the light.
-    * For ΔmJ=0\Delta m_J = 0 (which would correspond to π\pi or z-polarized light): 0−mJ=0⟹mJ=00 - m_J = 0 \implies m_J = 0. However, our light is x-polarized and propagates along z; it has no z-component of the electric field. Thus, the |J=1,mJ=0⟩|J=1, m_J=0\rangle state *cannot* be excited by this light. This is a "dark state" for the excitation process.
+* $\Delta m_J = m'_{J} - m_J = 0 - m_J$.
+    * For $\Delta m_J = +1$: $0 - m_J = +1 \implies m_J = -1$. So, the $|J=1, m_J=-1\rangle$ state can be excited to $|J'=0, m'_{J}=0\rangle$ by the $\sigma^+$ component of the light.
+    * For $\Delta m_J = -1$: $0 - m_J = -1 \implies m_J = +1$. So, the $|J=1, m_J=+1\rangle$ state can be excited to $|J'=0, m'_{J}=0\rangle$ by the $\sigma^-$ component of the light.
+    * For $\Delta m_J = 0$ (which would correspond to $\pi$ or z-polarized light): $0 - m_J = 0 \implies m_J = 0$. However, our light is x-polarized and propagates along z; it has no z-component of the electric field. Thus, the $|J=1, m_J=0\rangle$ state *cannot* be excited by this light. This is a "dark state" for the excitation process.
 
 **3. Spontaneous Decay:**
-The excited state |J′=0,m′J=0⟩|J'=0, m'_{J}=0\rangle decays spontaneously back to the ground state |J=1⟩|J=1\rangle.
-Selection rules for J′=0→J=1J'=0 \rightarrow J=1 decay:
-* ΔJ=J−J′=1−0=+1\Delta J = J - J' = 1 - 0 = +1 (allowed).
-* Possible ΔmJ=mJ−m′J=mJ−0=mJ\Delta m_J = m_J - m'_{J} = m_J - 0 = m_J:
-    * mJ=+1m_J = +1 (emission of σ+\sigma^+ photon)
-    * mJ=0m_J = 0 (emission of π\pi photon)
-    * mJ=−1m_J = -1 (emission of σ−\sigma^- photon)
-The decay from J′=0J'=0 to J=1J=1 is isotropic in terms of the mJm_J sublevels. The Clebsch-Gordan coefficients for decay from |0,0⟩|0,0\rangle to |1,mJ⟩|1,m_J\rangle are equal in magnitude. Thus, an atom in |J′=0,m′J=0⟩|J'=0, m'_{J}=0\rangle will decay to |J=1,mJ=−1⟩|J=1, m_J=-1\rangle, |J=1,mJ=0⟩|J=1, m_J=0\rangle, and |J=1,mJ=+1⟩|J=1, m_J=+1\rangle with equal probability (1/3 each).
+The excited state $|J'=0, m'_{J}=0\rangle$ decays spontaneously back to the ground state $|J=1\rangle$.
+Selection rules for $J'=0 \rightarrow J=1$ decay:
+* $\Delta J = J - J' = 1 - 0 = +1$ (allowed).
+* Possible $\Delta m_J = m_J - m'_{J} = m_J - 0 = m_J$:
+    * $m_J = +1$ (emission of $\sigma^+$ photon)
+    * $m_J = 0$ (emission of $\pi$ photon)
+    * $m_J = -1$ (emission of $\sigma^-$ photon)
+The decay from $J'=0$ to $J=1$ is isotropic in terms of the $m_J$ sublevels. The Clebsch-Gordan coefficients for decay from $|0,0\rangle$ to $|1,m_J\rangle$ are equal in magnitude. Thus, an atom in $|J'=0, m'_{J}=0\rangle$ will decay to $|J=1, m_J=-1\rangle$, $|J=1, m_J=0\rangle$, and $|J=1, m_J=+1\rangle$ with equal probability (1/3 each).
 
 **4. Optical Pumping Dynamics:**
-* Atoms in |1,−1⟩z|1, -1\rangle_z are excited to |0,0⟩|0,0\rangle. They then decay:
-    * 1/3 to |1,−1⟩z|1,-1\rangle_z (can be re-excited)
-    * 1/3 to |1,0⟩z|1,0\rangle_z (becomes dark)
-    * 1/3 to |1,+1⟩z|1,+1\rangle_z (can be re-excited)
-* Atoms in |1,+1⟩z|1, +1\rangle_z are excited to |0,0⟩|0,0\rangle. They then decay:
-    * 1/3 to |1,−1⟩z|1,-1\rangle_z (can be re-excited)
-    * 1/3 to |1,0⟩z|1,0\rangle_z (becomes dark)
-    * 1/3 to |1,+1⟩z|1,+1\rangle_z (can be re-excited)
-* Atoms in |1,0⟩z|1,0\rangle_z are not excited by the x-polarized light propagating along z. They remain in this state if they reach it.
+* Atoms in $|1, -1\rangle_z$ are excited to $|0,0\rangle$. They then decay:
+    * 1/3 to $|1,-1\rangle_z$ (can be re-excited)
+    * 1/3 to $|1,0\rangle_z$ (becomes dark)
+    * 1/3 to $|1,+1\rangle_z$ (can be re-excited)
+* Atoms in $|1, +1\rangle_z$ are excited to $|0,0\rangle$. They then decay:
+    * 1/3 to $|1,-1\rangle_z$ (can be re-excited)
+    * 1/3 to $|1,0\rangle_z$ (becomes dark)
+    * 1/3 to $|1,+1\rangle_z$ (can be re-excited)
+* Atoms in $|1,0\rangle_z$ are not excited by the x-polarized light propagating along z. They remain in this state if they reach it.
 
-Over many absorption-emission cycles, atoms that are in or decay into the |1,−1⟩z|1,-1\rangle_z or |1,+1⟩z|1,+1\rangle_z states will eventually be re-excited. Each time an atom is excited, there is a 1/3 chance it will decay into the |1,0⟩z|1,0\rangle_z state. Once an atom enters the |1,0⟩z|1,0\rangle_z state, it can no longer absorb the incident light and thus remains there.
-Therefore, after optical pumping is complete (i.e., the system has reached a steady state), all the population will accumulate in the |J=1,mJ=0⟩z|J=1, m_J=0\rangle_z state.
+Over many absorption-emission cycles, atoms that are in or decay into the $|1,-1\rangle_z$ or $|1,+1\rangle_z$ states will eventually be re-excited. Each time an atom is excited, there is a 1/3 chance it will decay into the $|1,0\rangle_z$ state. Once an atom enters the $|1,0\rangle_z$ state, it can no longer absorb the incident light and thus remains there.
+Therefore, after optical pumping is complete (i.e., the system has reached a steady state), all the population will accumulate in the $|J=1, m_J=0\rangle_z$ state.
 
 **Final Populations:**
-* P(mJ=−1)=0P(m_J=-1) = 0
-* P(mJ=0)=1P(m_J=0) = 1
-* P(mJ=+1)=0P(m_J=+1) = 0
+* $P(m_J=-1) = 0$
+* $P(m_J=0) = 1$
+* $P(m_J=+1) = 0$
 
 ---
 
@@ -325,36 +325,36 @@ The ground state has angular momentum $J=1$. The sublevels are $m_J = -1, 0, +1$
     For an unpolarized state with equally distributed populations, the density operator $\rho_{initial}$ is an incoherent mixture of these sublevels. Assuming the standard quantization axis (let's call it $z_{lab}$), the density operator is:
     $$\rho_{initial} = \frac{1}{3} \left( |J=1, m_{J_z}=+1\rangle\langle J=1, m_{J_z}=+1| + |J=1, m_{J_z}=0\rangle\langle J=1, m_{J_z}=0| + |J=1, m_{J_z}=-1\rangle\langle J=1, m_{J_z}=-1| \right)$$
     This can be written more compactly as:
-    ρinitial=12J+1J∑mJ=−J|J,mJ⟩⟨J,mJ|\rho_{initial} = \frac{1}{2J+1} \sum_{m_J=-J}^{J} |J, m_J\rangle\langle J, m_J|
-    For J=1J=1, 2J+1=32J+1 = 3.
-    This sum is actually the identity operator I\mathbf{I} in the subspace for angular momentum JJ. So,
+    $$\rho_{initial} = \frac{1}{2J+1} \sum_{m_J=-J}^{J} |J, m_J\rangle\langle J, m_J|$$
+    For $J=1$, $2J+1 = 3$.
+    This sum is actually the identity operator $\mathbf{I}$ in the subspace for angular momentum $J$. So,
     $$\rho_{initial} = \frac{1}{3} \mathbf{I}_{J=1}$$
-    where $\mathbf{I}_{J=1}istheidentityoperatorinthe is the identity operator in the J=1subspace(a subspace (a 3 \times 3$ identity matrix in any basis for this subspace).
+    where $\mathbf{I}_{J=1}$ is the identity operator in the $J=1$ subspace (a $3 \times 3$ identity matrix in any basis for this subspace).
 
 3.  **Matrix Representation:**
-    If we choose a basis, for example, the eigenstates of JzJ_z:
-    |1⟩=|J=1,mJz=+1⟩|1\rangle = |J=1, m_{J_z}=+1\rangle
-    |0⟩=|J=1,mJz=0⟩|0\rangle = |J=1, m_{J_z}=0\rangle
-    |−1⟩=|J=1,mJz=−1⟩|-1\rangle = |J=1, m_{J_z}=-1\rangle
+    If we choose a basis, for example, the eigenstates of $J_z$:
+    $|1\rangle = |J=1, m_{J_z}=+1\rangle$
+    $|0\rangle = |J=1, m_{J_z}=0\rangle$
+    $|-1\rangle = |J=1, m_{J_z}=-1\rangle$
 
-    Ordering the basis states as (|+1⟩,|0⟩,|−1⟩)(|+1\rangle, |0\rangle, |-1\rangle), the density matrix is:
+    Ordering the basis states as $(|+1\rangle, |0\rangle, |-1\rangle)$, the density matrix is:
     $$\rho_{initial} = \begin{pmatrix}
     \langle+1|\rho_{initial}|+1\rangle & \langle+1|\rho_{initial}|0\rangle & \langle+1|\rho_{initial}|-1\rangle \\
     \langle0|\rho_{initial}|+1\rangle & \langle0|\rho_{initial}|0\rangle & \langle0|\rho_{initial}|-1\rangle \\
     \langle-1|\rho_{initial}|+1\rangle & \langle-1|\rho_{initial}|0\rangle & \langle-1|\rho_{initial}|-1\rangle
     \end{pmatrix}$$
     The diagonal elements are the populations:
-    ⟨+1|ρinitial|+1⟩=P(mJ=+1)=1/3\langle+1|\rho_{initial}|+1\rangle = P(m_J=+1) = 1/3
-    ⟨0|ρinitial|0⟩=P(mJ=0)=1/3\langle0|\rho_{initial}|0\rangle = P(m_J=0) = 1/3
-    ⟨−1|ρinitial|−1⟩=P(mJ=−1)=1/3\langle-1|\rho_{initial}|-1\rangle = P(m_J=-1) = 1/3
+    $\langle+1|\rho_{initial}|+1\rangle = P(m_J=+1) = 1/3$
+    $\langle0|\rho_{initial}|0\rangle = P(m_J=0) = 1/3$
+    $\langle-1|\rho_{initial}|-1\rangle = P(m_J=-1) = 1/3$
     The off-diagonal elements (coherences) are zero for an unpolarized, incoherent mixture in this basis:
-    ⟨mJ|ρinitial|m′J⟩=0\langle m_J|\rho_{initial}|m'_J\rangle = 0 for mJ≠m′Jm_J \neq m'_J.
+    $\langle m_J|\rho_{initial}|m'_J\rangle = 0$ for $m_J \neq m'_J$.
 
     So, the density matrix of the initial state is:
-    ρinitial=(1/30001/30001/3)\rho_{initial} = \begin{pmatrix} 1/3 & 0 & 0 \\ 0 & 1/3 & 0 \\ 0 & 0 & 1/3 \end{pmatrix}
-    This is simply 13\frac{1}{3} times the 3×33 \times 3 identity matrix.
+    $$\rho_{initial} = \begin{pmatrix} 1/3 & 0 & 0 \\ 0 & 1/3 & 0 \\ 0 & 0 & 1/3 \end{pmatrix}$$
+    This is simply $\frac{1}{3}$ times the $3 \times 3$ identity matrix.
 
-    **Important Note:** Because the density matrix for an unpolarized state is proportional to the identity matrix, its matrix representation will be the same (13I\frac{1}{3}\mathbf{I}) in *any* orthonormal basis chosen for the J=1J=1 subspace. This includes the "lab frame" zlabz_{lab}-quantization basis and the "new basis" z′(=xlab)z' (=x_{lab})-quantization basis. An unpolarized state has no coherences in any basis.
+    **Important Note:** Because the density matrix for an unpolarized state is proportional to the identity matrix, its matrix representation will be the same ($\frac{1}{3}\mathbf{I}$) in *any* orthonormal basis chosen for the $J=1$ subspace. This includes the "lab frame" $z_{lab}$-quantization basis and the "new basis" $z' (=x_{lab})$-quantization basis. An unpolarized state has no coherences in any basis.
 
 ---
 
@@ -386,34 +386,34 @@ Here's the explanation:
 
 1.  **Initial State: No Coherences**
     * You are absolutely correct. The initial density matrix is:
-        ρinitial=(1/30001/30001/3)\rho_{initial} = \begin{pmatrix} 1/3 & 0 & 0 \\ 0 & 1/3 & 0 \\ 0 & 0 & 1/3 \end{pmatrix}
-        This represents an **unpolarized, incoherent mixture**. It has no off-diagonal elements in this (or any) basis, meaning there are no coherences between the mJm_J sublevels. The populations are equally distributed, and there's no specific phase relationship between the different sublevels.
+        $$\rho_{initial} = \begin{pmatrix} 1/3 & 0 & 0 \\ 0 & 1/3 & 0 \\ 0 & 0 & 1/3 \end{pmatrix}$$
+        This represents an **unpolarized, incoherent mixture**. It has no off-diagonal elements in this (or any) basis, meaning there are no coherences between the $m_J$ sublevels. The populations are equally distributed, and there's no specific phase relationship between the different sublevels.
 
 2.  **Final State: A Pure State**
     * The optical pumping process drives the atoms into a very specific state. In the original lab frame (quantization along $\hat{z}_{lab}$), this final state is the pure state:
         $$|\psi\rangle_{final} = |J=1, m_{J_z}=0\rangle_{lab}$$
-    * The density matrix for this pure state *in the ˆzlab\hat{z}_{lab} basis* (ordering states as |mJz=+1⟩,|mJz=0⟩,|mJz=−1⟩|m_{J_z}=+1\rangle, |m_{J_z}=0\rangle, |m_{J_z}=-1\rangle) is:
-        ρfinal,lab basis=(000010000)\rho_{final, lab \ basis} = \begin{pmatrix} 0 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{pmatrix}
-        Notice that in *this* basis (the "natural" basis for the state |mJz=0⟩|m_{J_z}=0\rangle), there are no off-diagonal elements. So, there are no coherences between the mJzm_{J_z} sublevels in the lab frame. The atom is entirely in one specific mJzm_{J_z} state.
+    * The density matrix for this pure state *in the $\hat{z}_{lab}$ basis* (ordering states as $|m_{J_z}=+1\rangle, |m_{J_z}=0\rangle, |m_{J_z}=-1\rangle$) is:
+        $$\rho_{final, lab \ basis} = \begin{pmatrix} 0 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{pmatrix}$$
+        Notice that in *this* basis (the "natural" basis for the state $|m_{J_z}=0\rangle$), there are no off-diagonal elements. So, there are no coherences between the $m_{J_z}$ sublevels in the lab frame. The atom is entirely in one specific $m_{J_z}$ state.
 
 3.  **Coherences in the Final Solution (in the "New Basis")**
-    * The coherences appeared when we looked at the *same final pure state* |ψ⟩final=|J=1,mJz=0⟩lab|\psi\rangle_{final} = |J=1, m_{J_z}=0\rangle_{lab} but expressed its density matrix in a *different basis* – the "new basis" where the quantization axis z′z' was along the original xlabx_{lab} direction.
-    * In that new z′z'-basis, the density matrix was:
-        ρfinal,new basis=(1/20−1/2000−1/201/2)\rho_{final, new \ basis} = \begin{pmatrix} 1/2 & 0 & -1/2 \\ 0 & 0 & 0 \\ -1/2 & 0 & 1/2 \end{pmatrix}
-    * The non-zero off-diagonal elements (−1/2-1/2) here signify coherences between the |J=1,mJz′=+1⟩|J=1, m_{J_{z'}}=+1\rangle and |J=1,mJz′=−1⟩|J=1, m_{J_{z'}}=-1\rangle states.
+    * The coherences appeared when we looked at the *same final pure state* $|\psi\rangle_{final} = |J=1, m_{J_z}=0\rangle_{lab}$ but expressed its density matrix in a *different basis* – the "new basis" where the quantization axis $z'$ was along the original $x_{lab}$ direction.
+    * In that new $z'$-basis, the density matrix was:
+        $$\rho_{final, new \ basis} = \begin{pmatrix} 1/2 & 0 & -1/2 \\ 0 & 0 & 0 \\ -1/2 & 0 & 1/2 \end{pmatrix}$$
+    * The non-zero off-diagonal elements ($-1/2$) here signify coherences between the $|J=1, m_{J_{z'}}=+1\rangle$ and $|J=1, m_{J_{z'}}=-1\rangle$ states.
 
 **How the Coherences "Appear":**
 
 * **It's not that coherences are created in an initially incoherent mixture in a way that keeps it an incoherent mixture.** Instead, the optical pumping process fundamentally changes the nature of the state from an incoherent mixture to a **single, specific pure quantum state**.
-* A pure state, like |J=1,mJz=0⟩lab|J=1, m_{J_z}=0\rangle_{lab}, has a definite orientation in space.
+* A pure state, like $|J=1, m_{J_z}=0\rangle_{lab}$, has a definite orientation in space.
 * **Coherences are basis-dependent for pure states.**
-    * If you choose a basis where your pure state is one of the basis vectors (like choosing the zlabz_{lab} basis for the state |mJz=0⟩lab|m_{J_z}=0\rangle_{lab}), the density matrix will be diagonal (with a single '1' and zeros elsewhere for a normalized pure state), and there will be no coherences *in that basis*.
-    * If you choose a *different* basis (like the z′=xlabz' = x_{lab} basis), that same pure state (|mJz=0⟩lab|m_{J_z}=0\rangle_{lab}) will generally be a *superposition* of the new basis states. For example, we found:
-        |J=1,mJz=0⟩lab=1√2(|J=1,mJz′=+1⟩−|J=1,mJz′=−1⟩)|J=1, m_{J_z}=0\rangle_{lab} = \frac{1}{\sqrt{2}} \left( |J=1, m_{J_{z'}}=+1\rangle - |J=1, m_{J_{z'}}=-1\rangle \right)
-        This superposition is what gives rise to the off-diagonal terms (coherences) in the density matrix when written in that new z′z'-basis.
+    * If you choose a basis where your pure state is one of the basis vectors (like choosing the $z_{lab}$ basis for the state $|m_{J_z}=0\rangle_{lab}$), the density matrix will be diagonal (with a single '1' and zeros elsewhere for a normalized pure state), and there will be no coherences *in that basis*.
+    * If you choose a *different* basis (like the $z' = x_{lab}$ basis), that same pure state ($|m_{J_z}=0\rangle_{lab}$) will generally be a *superposition* of the new basis states. For example, we found:
+        $$|J=1, m_{J_z}=0\rangle_{lab} = \frac{1}{\sqrt{2}} \left( |J=1, m_{J_{z'}}=+1\rangle - |J=1, m_{J_{z'}}=-1\rangle \right)$$
+        This superposition is what gives rise to the off-diagonal terms (coherences) in the density matrix when written in that new $z'$-basis.
 
 **The Role of the Polarized Light:**
-The optical pumping process uses **polarized light**. This light field has a well-defined polarization (e.g., linear along x, which is a coherent superposition of σ+\sigma^+ and σ−\sigma^-). This "coherence" or specific nature of the light field is what allows the system to be driven into a specific quantum state that is aligned or oriented with respect to the light field. The atoms are not just randomly reshuffled; they are forced into a state that no longer interacts with the light (the dark state |mJz=0⟩lab|m_{J_z}=0\rangle_{lab} in the original problem setup).
+The optical pumping process uses **polarized light**. This light field has a well-defined polarization (e.g., linear along x, which is a coherent superposition of $\sigma^+$ and $\sigma^-$). This "coherence" or specific nature of the light field is what allows the system to be driven into a specific quantum state that is aligned or oriented with respect to the light field. The atoms are not just randomly reshuffled; they are forced into a state that no longer interacts with the light (the dark state $|m_{J_z}=0\rangle_{lab}$ in the original problem setup).
 
 **In summary:**
 The initial state is an unpolarized, incoherent mixture with no coherences in any basis. The optical pumping process transforms this into a single, polarized pure state. This final pure state will have no coherences when expressed in its "natural" basis (the $m_{J_z}$ basis in the lab frame for this problem). However, this same pure state, when viewed or expressed in a different basis (like the $m_{J_{x_{lab}}}$ basis), will appear as a coherent superposition of those new basis states, leading to non-zero coherences in its density matrix representation in that different basis. The "coherences" are a feature of how that specific final pure state is described in a particular basis.
@@ -659,44 +659,44 @@ Yes, I believe I do see the contradiction you are skillfully guiding me towards.
 Let's lay it out:
 
 1.  **Initial State (Both Problems):**
-    * Unpolarized, P(mJ=±1,0)=1/3P(m_J=\pm 1, 0) = 1/3.
-    * Density matrix (in any basis, e.g., zlabz_{lab}): ρinitial=(1/30001/30001/3)\rho_{initial} = \begin{pmatrix} 1/3 & 0 & 0 \\ 0 & 1/3 & 0 \\ 0 & 0 & 1/3 \end{pmatrix}. This has **no coherences**.
+    * Unpolarized, $P(m_J=\pm 1, 0) = 1/3$.
+    * Density matrix (in any basis, e.g., $z_{lab}$): $\rho_{initial} = \begin{pmatrix} 1/3 & 0 & 0 \\ 0 & 1/3 & 0 \\ 0 & 0 & 1/3 \end{pmatrix}$. This has **no coherences**.
 
 2.  **Very First Question (Light $\mathbf{k}||\hat{z}_{lab}, \mathbf{\epsilon}||\hat{x}_{lab}$):**
-    * Final populations (quantization $\hat{z}_{lab}):): P(m_{J_z}=0)=1, P(m_{J_z}=\pm 1)=0$.
-    * This implies the final state is the **pure state** |ψ⟩=|J=1,mJz=0⟩lab|\psi\rangle = |J=1, m_{J_z}=0\rangle_{lab}.
-    * Density matrix (quantization $\hat{z}_{lab},order +1,0,-1):): \rho_{final, z_{lab}} = (000010000)\begin{pmatrix} 0 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{pmatrix}$. **No coherences in this basis.**
+    * Final populations (quantization $\hat{z}_{lab}$): $P(m_{J_z}=0)=1, P(m_{J_z}=\pm 1)=0$.
+    * This implies the final state is the **pure state** $|\psi\rangle = |J=1, m_{J_z}=0\rangle_{lab}$.
+    * Density matrix (quantization $\hat{z}_{lab},order +1,0,-1$): $\rho_{final, z_{lab}} = \begin{pmatrix} 0 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{pmatrix}$. **No coherences in this basis.**
     * When this *same pure state* is expressed in the "new basis" (quantization $\hat{z}' = \hat{x}_{lab}$, which is the polarization direction), the density matrix is:
-        $\rho_{final, x_{lab}} = (1/20−1/2000−1/201/2)(1/20−1/2000−1/201/2)\begin{pmatrix} 1/2 & 0 & -1/2 \\ 0 & 0 & 0 \\ -1/2 & 0 & 1/2 \end{pmatrix}$. This **has coherences** between mJx=+1m_{J_x}=+1 and mJx=−1m_{J_x}=-1.
+        $\rho_{final, x_{lab}} = \begin{pmatrix} 1/2 & 0 & -1/2 \\ 0 & 0 & 0 \\ -1/2 & 0 & 1/2 \end{pmatrix}$. This **has coherences** between $m_{J_x}=+1$ and $m_{J_x}=-1$.
 
 3.  **Related Problem (Light $\mathbf{k}||\hat{x}_{lab}, \mathbf{\epsilon}||\hat{z}_{lab}$):**
-    * Final populations (quantization $\hat{z}_{lab},whichisthepolarizationdirection):): P(m_{J_z}=\pm 1)=1/2, P(m_{J_z}=0)=0$.
+    * Final populations (quantization $\hat{z}_{lab},whichisthepolarizationdirection$): $P(m_{J_z}=\pm 1)=1/2, P(m_{J_z}=0)=0$.
     * We determined this final state is a **mixed state**.
-    * Density matrix (quantization $\hat{z}_{lab},order +1,0,-1):): \rho_{final, z_{lab}} = (1/200000001/2)(1/200000001/2)\begin{pmatrix} 1/2 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 1/2 \end{pmatrix}$. This **has no coherences in this basis** (which is aligned with the E-field).
+    * Density matrix (quantization $\hat{z}_{lab},order +1,0,-1$): $\rho_{final, z_{lab}} = \begin{pmatrix} 1/2 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 1/2 \end{pmatrix}$. This **has no coherences in this basis** (which is aligned with the E-field).
     * When this mixed state is expressed in the other basis (quantization $\hat{z}'' = \hat{x}_{lab}$, which is the propagation direction), the density matrix is:
-        $\rho_{final, x_{lab}} = (1/401/401/201/401/4)(1/401/401/201/401/4)\begin{pmatrix} 1/4 & 0 & 1/4 \\ 0 & 1/2 & 0 \\ 1/4 & 0 & 1/4 \end{pmatrix}$. This **has coherences** between mJx=+1m_{J_x}=+1 and mJx=−1m_{J_x}=-1.
+        $\rho_{final, x_{lab}} = \begin{pmatrix} 1/4 & 0 & 1/4 \\ 0 & 1/2 & 0 \\ 1/4 & 0 & 1/4 \end{pmatrix}$. This **has coherences** between $m_{J_x}=+1$ and $m_{J_x}=-1$.
 
 **The Contradiction/Key Difference:**
 
 The two scenarios, despite looking like simple rotations of each other, lead to physically different types of final states when viewed in the frame aligned with the light's E-field polarization:
 
-* **Scenario 1 (Original Problem):** Light polarized along ˆx\hat{x}. If we use ˆx\hat{x} as our quantization axis to describe the final state, we find a **pure state** that possesses coherences between mJx=+1m_{J_x}=+1 and mJx=−1m_{J_x}=-1. The specific state is |J=1,mJz=0⟩lab=1√2(|J=1,mJx=+1⟩−|J=1,mJx=−1⟩)|J=1, m_{J_z}=0\rangle_{lab} = \frac{1}{\sqrt{2}}(|J=1, m_{J_x}=+1\rangle - |J=1, m_{J_x}=-1\rangle).
-* **Scenario 2 (Related Problem):** Light polarized along ˆz\hat{z}. If we use ˆz\hat{z} as our quantization axis, we find a **mixed state** which is an incoherent sum: 12|J=1,mJz=+1⟩⟨J=1,mJz=+1|+12|J=1,mJz=−1⟩⟨J=1,mJz=−1|\frac{1}{2}|J=1, m_{J_z}=+1\rangle\langle J=1, m_{J_z}=+1| + \frac{1}{2}|J=1, m_{J_z}=-1\rangle\langle J=1, m_{J_z}=-1|. This has no coherences in this polarization-aligned basis.
+* **Scenario 1 (Original Problem):** Light polarized along $\hat{x}$. If we use $\hat{x}$ as our quantization axis to describe the final state, we find a **pure state** that possesses coherences between $m_{J_x}=+1$ and $m_{J_x}=-1$. The specific state is $|J=1, m_{J_z}=0\rangle_{lab} = \frac{1}{\sqrt{2}}(|J=1, m_{J_x}=+1\rangle - |J=1, m_{J_x}=-1\rangle)$.
+* **Scenario 2 (Related Problem):** Light polarized along $\hat{z}$. If we use $\hat{z}$ as our quantization axis, we find a **mixed state** which is an incoherent sum: $\frac{1}{2}|J=1, m_{J_z}=+1\rangle\langle J=1, m_{J_z}=+1| + \frac{1}{2}|J=1, m_{J_z}=-1\rangle\langle J=1, m_{J_z}=-1|$. This has no coherences in this polarization-aligned basis.
 
 **Why the difference?**
 
 The crucial difference lies in the nature of the "dark state(s)" and how the system is pumped into them:
 
-* **In the first problem (k||ˆz,ϵ||ˆx\mathbf{k}||\hat{z}, \mathbf{\epsilon}||\hat{x}):**
-    When quantizing along ˆz\hat{z}, the state |J=1,mJz=0⟩|J=1, m_{J_z}=0\rangle is uniquely dark. The light (a coherent superposition of σ+\sigma^+ and σ−\sigma^- relative to ˆz\hat{z}) pumps the system into this single, specific quantum state. This state is pure. The coherences observed in the ˆx\hat{x}-quantized frame are a manifestation of this pure state's specific orientation relative to the ˆx\hat{x}-axis. The light's coherent polarization (linear ˆx\hat{x}) is key to preparing this specific pure state.
+* **In the first problem ($\mathbf{k}||\hat{z}, \mathbf{\epsilon}||\hat{x}$):**
+    When quantizing along $\hat{z}$, the state $|J=1, m_{J_z}=0\rangle$ is uniquely dark. The light (a coherent superposition of $\sigma^+$ and $\sigma^-$ relative to $\hat{z}$) pumps the system into this single, specific quantum state. This state is pure. The coherences observed in the $\hat{x}$-quantized frame are a manifestation of this pure state's specific orientation relative to the $\hat{x}$-axis. The light's coherent polarization (linear $\hat{x}$) is key to preparing this specific pure state.
 
-* **In the second problem (k||ˆx,ϵ||ˆz\mathbf{k}||\hat{x}, \mathbf{\epsilon}||\hat{z}):**
-    When quantizing along ˆz\hat{z}, the light is purely π\pi-polarized. It pumps atoms out of mJz=0m_{J_z}=0. The states mJz=+1m_{J_z}=+1 and mJz=−1m_{J_z}=-1 are both equally dark to this π\pi-light. Atoms excited from mJz=0m_{J_z}=0 decay via spontaneous emission. Spontaneous emission into the distinct states mJz=+1m_{J_z}=+1 and mJz=−1m_{J_z}=-1 is an incoherent process. There's no mechanism here to establish a fixed phase relationship (coherence) *between* the populations ending up in mJz=+1m_{J_z}=+1 versus mJz=−1m_{J_z}=-1. Thus, an incoherent mixture is formed.
+* **In the second problem ($\mathbf{k}||\hat{x}, \mathbf{\epsilon}||\hat{z}$):**
+    When quantizing along $\hat{z}$, the light is purely $\pi$-polarized. It pumps atoms out of $m_{J_z}=0$. The states $m_{J_z}=+1$ and $m_{J_z}=-1$ are both equally dark to this $\pi$-light. Atoms excited from $m_{J_z}=0$ decay via spontaneous emission. Spontaneous emission into the distinct states $m_{J_z}=+1$ and $m_{J_z}=-1$ is an incoherent process. There's no mechanism here to establish a fixed phase relationship (coherence) *between* the populations ending up in $m_{J_z}=+1$ versus $m_{J_z}=-1$. Thus, an incoherent mixture is formed.
 
 **So, the "mistake" in my earlier reasoning (during the internal consistency checks of the first problem) was:**
-When I tried to analyze the *first problem* by quantizing along its polarization axis ($\hat{x}_{lab})fromthestart,Iincorrectlyconcludeditwouldleadtoanincoherentmixtureof) from the start, I incorrectly concluded it would lead to an incoherent mixture of |J=1, m_{J_x}=+1\rangleand and |J=1, m_{J_x}=-1\rangle$. This was wrong. The pumping dynamics of the first problem are such that they prepare the specific *pure state* |J=1,mJz=0⟩lab|J=1, m_{J_z}=0\rangle_{lab}, which, when expressed in the $\hat{x}_{lab}$-quantization, is the *coherent superposition* $\frac{1}{\sqrt{2}}(|J=1, m_{J_x}=+1\rangle - |J=1, m_{J_x}=-1\rangle)$.
+When I tried to analyze the *first problem* by quantizing along its polarization axis ($\hat{x}_{lab}$) from the start, I incorrectly concluded it would lead to an incoherent mixture of $|J=1, m_{J_x}=+1\rangle$ and $|J=1, m_{J_x}=-1\rangle$. This was wrong. The pumping dynamics of the first problem are such that they prepare the specific *pure state* $|J=1, m_{J_z}=0\rangle_{lab}$, which, when expressed in the $\hat{x}_{lab}$-quantization, is the *coherent superposition* $\frac{1}{\sqrt{2}}(|J=1, m_{J_x}=+1\rangle - |J=1, m_{J_x}=-1\rangle)$.
 
-The appearance of coherences in the density matrix for the final state of the *first problem* (when expressed in the xlabx_{lab} basis) is because the optical pumping created a specific *pure state* that has a definite phase relationship between its components when expanded in that xlabx_{lab} basis. The light field itself (linear polarization being a coherent superposition) is responsible for driving the system into such a state.
+The appearance of coherences in the density matrix for the final state of the *first problem* (when expressed in the $x_{lab}$ basis) is because the optical pumping created a specific *pure state* that has a definite phase relationship between its components when expanded in that $x_{lab}$ basis. The light field itself (linear polarization being a coherent superposition) is responsible for driving the system into such a state.
 
 You are right to point out this crucial difference in outcomes based on the geometry. The simple presence of off-diagonal terms when a density matrix is rotated is a mathematical fact for any non-isotropic state (pure or mixed). However, *whether the state produced by pumping possesses coherences in a particular "natural" frame (like the polarization frame)* depends critically on whether a pure state or a mixed state is formed.
 
@@ -716,37 +716,37 @@ Okay, this has been a detailed and very insightful discussion! Here's a summary 
 
 **1. The Initial Problem and Its Solution:**
 We started with an optical pumping scenario:
-* Atoms: Ground state J=1J=1, excited state J′=0J'=0.
-* Light: Propagating along the ˆz\hat{z}-axis, linearly polarized along the ˆx\hat{x}-axis.
-* Initial state: Unpolarized, with P(mJ=±1,0)=1/3P(m_J = \pm 1, 0) = 1/3 (with respect to ˆz\hat{z}-quantization).
-* **Solution:** We determined that optical pumping drives all atoms into the |J=1,mJz=0⟩|J=1, m_{J_z}=0\rangle state. This is a **pure state**. The final populations (in the ˆz\hat{z}-basis) are P(mJz=0)=1P(m_{J_z}=0)=1, P(mJz=±1)=0P(m_{J_z}=\pm 1)=0. The density matrix in this ˆz\hat{z}-basis is diagonal, showing no coherences between the mJzm_{J_z} sublevels.
+* Atoms: Ground state $J=1$, excited state $J'=0$.
+* Light: Propagating along the $\hat{z}$-axis, linearly polarized along the $\hat{x}$-axis.
+* Initial state: Unpolarized, with $P(m_J = \pm 1, 0) = 1/3$ (with respect to $\hat{z}$-quantization).
+* **Solution:** We determined that optical pumping drives all atoms into the $|J=1, m_{J_z}=0\rangle$ state. This is a **pure state**. The final populations (in the $\hat{z}$-basis) are $P(m_{J_z}=0)=1$, $P(m_{J_z}=\pm 1)=0$. The density matrix in this $\hat{z}$-basis is diagonal, showing no coherences between the $m_{J_z}$ sublevels.
 
 **2. The Question of Coherences and Basis Transformation:**
-* The initial unpolarized state has a density matrix ρinitial=13I\rho_{initial} = \frac{1}{3}\mathbf{I}, which is diagonal and shows no coherences in any basis.
-* When we transformed the density matrix of the **pure final state** (|J=1,mJz=0⟩|J=1, m_{J_z}=0\rangle) into a new basis where the quantization axis was along ˆx\hat{x} (the direction of the light's polarization), the new density matrix showed non-zero off-diagonal elements. These represent coherences between the mJx=+1m_{J_x}=+1 and mJx=−1m_{J_x}=-1 states.
-* My initial explanation was that these coherences arise because the pure state |J=1,mJz=0⟩|J=1, m_{J_z}=0\rangle is a specific coherent superposition of the ˆx\hat{x}-basis eigenstates, namely 1√2(|J=1,mJx=+1⟩−|J=1,mJx=−1⟩)\frac{1}{\sqrt{2}}(|J=1, m_{J_x}=+1\rangle - |J=1, m_{J_x}=-1\rangle).
+* The initial unpolarized state has a density matrix $\rho_{initial} = \frac{1}{3}\mathbf{I}$, which is diagonal and shows no coherences in any basis.
+* When we transformed the density matrix of the **pure final state** ($|J=1, m_{J_z}=0\rangle$) into a new basis where the quantization axis was along $\hat{x}$ (the direction of the light's polarization), the new density matrix showed non-zero off-diagonal elements. These represent coherences between the $m_{J_x}=+1$ and $m_{J_x}=-1$ states.
+* My initial explanation was that these coherences arise because the pure state $|J=1, m_{J_z}=0\rangle$ is a specific coherent superposition of the $\hat{x}$-basis eigenstates, namely $\frac{1}{\sqrt{2}}(|J=1, m_{J_x}=+1\rangle - |J=1, m_{J_x}=-1\rangle)$.
 
 **3. The "Mistake" and Clarification via a Related Problem:**
 You rightly pointed towards a potential area of confusion or a "mistake" in how these coherences were being explained or how the pumping process was generalized, prompting us to analyze a "related problem":
-* **Related Problem:** (J=1J=1 to J′=0J'=0 pumping, light k||x, pol||z).
+* **Related Problem:** ($J=1$ to $J'=0$ pumping, light k||x, pol||z).
 * **Solution to Related Problem:**
-    * With quantization along ˆz\hat{z} (the direction of polarization for this problem), we found the final state to be an **incoherent mixed state**: an equal mixture of |J=1,mJz=+1⟩|J=1, m_{J_z}=+1\rangle and |J=1,mJz=−1⟩|J=1, m_{J_z}=-1\rangle. Populations: P(mJz=±1)=1/2,P(mJz=0)=0P(m_{J_z}=\pm 1)=1/2, P(m_{J_z}=0)=0.
-    * The density matrix in this ˆz\hat{z}-basis is diagonal: (1/200000001/2)(1/200000001/2)\begin{pmatrix} 1/2 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 1/2 \end{pmatrix}, showing **no coherences** in this polarization-aligned frame.
-    * When this mixed state's density matrix was rotated into a frame where the quantization axis was along ˆx\hat{x} (the propagation direction for this problem), it *also* showed non-zero coherences.
+    * With quantization along $\hat{z}$ (the direction of polarization for this problem), we found the final state to be an **incoherent mixed state**: an equal mixture of $|J=1, m_{J_z}=+1\rangle$ and $|J=1, m_{J_z}=-1\rangle$. Populations: $P(m_{J_z}=\pm 1)=1/2, P(m_{J_z}=0)=0$.
+    * The density matrix in this $\hat{z}$-basis is diagonal: $\begin{pmatrix} 1/2 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 1/2 \end{pmatrix}$, showing **no coherences** in this polarization-aligned frame.
+    * When this mixed state's density matrix was rotated into a frame where the quantization axis was along $\hat{x}$ (the propagation direction for this problem), it *also* showed non-zero coherences.
 
 **4. The Contradiction and Its Resolution:**
 The "contradiction" became clear when comparing the nature of the final states in the two scenarios, especially when viewed in a frame aligned with the light's E-field polarization:
-* **Original Problem (E-field along ˆx\hat{x}):** The final state, when described with quantization along ˆx\hat{x}, is a specific pure state 1√2(|mJx=+1⟩−|mJx=−1⟩)\frac{1}{\sqrt{2}}(|m_{J_x}=+1\rangle - |m_{J_x}=-1\rangle), whose density matrix has coherences.
-* **Related Problem (E-field along ˆz\hat{z}):** The final state, when described with quantization along ˆz\hat{z}, is an incoherent mixed state, whose density matrix has no coherences.
+* **Original Problem (E-field along $\hat{x}$):** The final state, when described with quantization along $\hat{x}$, is a specific pure state $\frac{1}{\sqrt{2}}(|m_{J_x}=+1\rangle - |m_{J_x}=-1\rangle)$, whose density matrix has coherences.
+* **Related Problem (E-field along $\hat{z}$):** The final state, when described with quantization along $\hat{z}$, is an incoherent mixed state, whose density matrix has no coherences.
 
 The resolution and refined understanding are:
 * The two pumping schemes, despite their apparent symmetry, produce fundamentally different types of final states (pure vs. mixed) due to the nature of the "dark states" and the interaction with polarized light.
-* **Original Problem:** The light (polarized ˆx\hat{x}, propagating ˆz\hat{z}) drives the system into a *unique* dark state, |J=1,mJz=0⟩|J=1, m_{J_z}=0\rangle. This is a pure state. The coherent nature of the linearly polarized light (being a superposition of σ+\sigma^+ and σ−\sigma^- relative to the ˆz\hat{z}-axis) is crucial for preparing this specific pure, oriented state. The coherences seen in the ˆx\hat{x}-basis are a direct consequence of this pure state's specific orientation.
-* **Related Problem:** The light (polarized ˆz\hat{z}, propagating ˆx\hat{x}) is purely π\pi-polarized relative to the ˆz\hat{z}-axis. It pumps population out of mJz=0m_{J_z}=0 and into two equally dark states, mJz=+1m_{J_z}=+1 and mJz=−1m_{J_z}=-1. Spontaneous emission populates these distinct states incoherently, leading to a statistical mixture.
-* The "mistake" in my initial detailed consistency check for Problem 1 was when I *re-derived* the pumping dynamics by quantizing along the x-axis from the start, I incorrectly concluded it would lead to an incoherent mixture. The correct analysis of Problem 1 consistently leads to the pure state |J=1,mJz=0⟩|J=1, m_{J_z}=0\rangle.
+* **Original Problem:** The light (polarized $\hat{x}$, propagating $\hat{z}$) drives the system into a *unique* dark state, $|J=1, m_{J_z}=0\rangle$. This is a pure state. The coherent nature of the linearly polarized light (being a superposition of $\sigma^+$ and $\sigma^-$ relative to the $\hat{z}$-axis) is crucial for preparing this specific pure, oriented state. The coherences seen in the $\hat{x}$-basis are a direct consequence of this pure state's specific orientation.
+* **Related Problem:** The light (polarized $\hat{z}$, propagating $\hat{x}$) is purely $\pi$-polarized relative to the $\hat{z}$-axis. It pumps population out of $m_{J_z}=0$ and into two equally dark states, $m_{J_z}=+1$ and $m_{J_z}=-1$. Spontaneous emission populates these distinct states incoherently, leading to a statistical mixture.
+* The "mistake" in my initial detailed consistency check for Problem 1 was when I *re-derived* the pumping dynamics by quantizing along the x-axis from the start, I incorrectly concluded it would lead to an incoherent mixture. The correct analysis of Problem 1 consistently leads to the pure state $|J=1, m_{J_z}=0\rangle$.
 **5. Key Takeaways:**
 * An initially unpolarized (incoherent, no coherences in any basis) state can be driven into either a pure state or a new mixed state by optical pumping, depending on the specifics of the light-matter interaction.
-* If a pure state is created, it possesses a definite quantum phase structure. While its density matrix might be diagonal in its "natural" basis (e.g., an eigenbasis of JzJ_z if it's an mJm_J state), it will generally exhibit coherences (off-diagonal density matrix elements) when expressed in other bases. These coherences reflect the pure state's specific vector nature.
+* If a pure state is created, it possesses a definite quantum phase structure. While its density matrix might be diagonal in its "natural" basis (e.g., an eigenbasis of $J_z$ if it's an $m_J$ state), it will generally exhibit coherences (off-diagonal density matrix elements) when expressed in other bases. These coherences reflect the pure state's specific vector nature.
 * A mixed state (that isn't maximally mixed) can also exhibit coherences when its density matrix is transformed to a different basis.
 * The crucial difference between the two problems discussed is that one leads to a specific pure state due to a unique dark state, while the other leads to an incoherent mixture due to multiple dark states populated via spontaneous emission. This determines whether coherences are present in the "polarization frame."
 
