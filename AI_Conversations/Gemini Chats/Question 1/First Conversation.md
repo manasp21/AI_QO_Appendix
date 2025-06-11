@@ -23,9 +23,9 @@ This is an optical pumping problem. Let's analyze the transitions and population
 
 **2. Light Polarization and Selection Rules for Excitation:**
 Linear polarization along x can be decomposed into a superposition of right-circular (σ+\sigma^+) and left-circular (σ−\sigma^-) polarization with respect to the z-axis:
-$\hat{e}_x = \frac{1}{\sqrt{2}}(\hat{e}_+ - \hat{e}_-)$
-where $\hat{e}_+ = -\frac{1}{\sqrt{2}}(\hat{e}_x + i\hat{e}_y)correspondsto corresponds to \Delta m_J = +1transitions,and transitions, and \hat{e}_- = \frac{1}{\sqrt{2}}(\hat{e}_x - i\hat{e}_y)correspondsto corresponds to \Delta m_J = -1$ transitions.
-(Note: The phase convention for $\hat{e}_\pmcanvary,butthekeyisthatx−polarizationdrivesboth can vary, but the key is that x-polarization drives both \Delta m_J = +1and and \Delta m_J = -1$ transitions with propagation along z.)
+ˆex=1√2(ˆe+−ˆe−)\hat{e}_x = \frac{1}{\sqrt{2}}(\hat{e}_+ - \hat{e}_-)
+where ˆe+=−1√2(ˆex+iˆey)correspondstocorrespondstoΔmJ=+1transitions,andtransitions,andˆe−=1√2(ˆex−iˆey)correspondstocorrespondstoΔmJ=−1\hat{e}_+ = -\frac{1}{\sqrt{2}}(\hat{e}_x + i\hat{e}_y)correspondsto corresponds to \Delta m_J = +1transitions,and transitions, and \hat{e}_- = \frac{1}{\sqrt{2}}(\hat{e}_x - i\hat{e}_y)correspondsto corresponds to \Delta m_J = -1 transitions.
+(Note: The phase convention for ˆe\pmcanvary,butthekeyisthatx−polarizationdrivesbothcanvary,butthekeyisthatx−polarizationdrivesbothΔmJ=+1andandΔmJ=−1\hat{e}_\pmcanvary,butthekeyisthatx−polarizationdrivesboth can vary, but the key is that x-polarization drives both \Delta m_J = +1and and \Delta m_J = -1 transitions with propagation along z.)
 
 Electric dipole selection rules for J=1→J′=0J=1 \rightarrow J'=0 excitation:
 * ΔJ=J′−J=0−1=−1\Delta J = J' - J = 0 - 1 = -1 (allowed).
@@ -731,7 +731,7 @@ You rightly pointed towards a potential area of confusion or a "mistake" in how 
 * **Related Problem:** (J=1 to J'=0 pumping, light k||x, pol||z).
 * **Solution to Related Problem:**
     * With quantization along ˆz\hat{z} (the direction of polarization for this problem), we found the final state to be an **incoherent mixed state**: an equal mixture of |J=1,mJz=+1⟩|J=1, m_{J_z}=+1\rangle and |J=1,mJz=−1⟩|J=1, m_{J_z}=-1\rangle. Populations: P(mJz=±1)=1/2,P(mJz=0)=0P(m_{J_z}=\pm 1)=1/2, P(m_{J_z}=0)=0.
-    * The density matrix in this ˆz\hat{z}-basis is diagonal: (1/200000001/2)\begin{pmatrix} 1/2 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 1/2 \end{pmatrix}, showing **no coherences** in this polarization-aligned frame.
+    * The density matrix in this ˆz\hat{z}-basis is diagonal: (1/200000001/2)(1/200000001/2)\begin{pmatrix} 1/2 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 1/2 \end{pmatrix}, showing **no coherences** in this polarization-aligned frame.
     * When this mixed state's density matrix was rotated into a frame where the quantization axis was along ˆx\hat{x} (the propagation direction for this problem), it *also* showed non-zero coherences.
 
 **4. The Contradiction and Its Resolution:**
