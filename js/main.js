@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to fetch conversations from the AI_Conversations directory
     function fetchConversations() {
-        fetch('https://manasp21.github.io/AI_QO_Appendix/AI_Conversations/conversations.json')
+        fetch('AI_Conversations/conversations.json')
             .then(response => response.json())
             .then(data => {
                 renderFolderStructure(data);
@@ -93,8 +93,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to load a conversation file
     function loadConversation(path) {
-        // Use correct base path for GitHub Pages (serving from repo root)
-        const baseURL = 'https://manasp21.github.io/AI_QO_Appendix/';
+        // Use relative path for resources
+        const baseURL = '';
         fetch(baseURL + encodeURI(path))
             .then(response => {
                 if (!response.ok) {
